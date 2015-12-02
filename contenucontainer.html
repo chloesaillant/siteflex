@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Tout sur flex - Les containers</title>
+    <link rel="stylesheet" media="screen" charset="utf-8">
+    <style type="text/css">@import "stylegeneral.css"; @import "stylecontenu.css";</style>
+  </head>
+  <body>
+
+    <header class="container">
+      <p>
+        <h3 class="titrenav">Display:flex;</h3>
+        <div class="container">
+          <ul class="container">
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a id="encours" href="#">Tout sur flex</a>
+                <ul>
+                  <li><a href="contenucontainer.html">Flex sur un container</a></li>
+                  <li><a href="contenuitems.html">Flex sur un item</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="ressources.html">Ressources</a>
+            </li>
+          </ul>
+        </div>
+      </p>
+    </header>
+
+    <h1>Flex sur un container</h1>
+    <article class="container">
+
+      <section class="container boitecontenu" id="display">
+        <h3>Display</h3>
+        <p class="pcontenu">
+          Duplexque isdem diebus acciderat malum, quod et Theophilum insontem atrox interceperat casus, et Serenianus dignus exsecratione cunctorum, innoxius, modo non reclamante publico vigore, discessit.
+        </p>
+
+        <div class="boitedemo">
+
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.svg"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">display: flex;</div>
+                }
+          </div>
+        </div>
+      </section>
+
+      <section class="container boitecontenu" id="flexdirection">
+        <h3>Flex-direction</h3>
+        <p class="pcontenu">
+          Duplexque isdem diebus acciderat malum, quod et Theophilum insontem atrox interceperat casus, et Serenianus dignus exsecratione cunctorum, innoxius, modo non reclamante publico vigore, discessit.
+        </p>
+
+        <div class="boitedemo">
+
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.svg"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">flex-direction: row <span class="commentaire">/*ou*/</span> row-reverse <span class="commentaire">/*ou*/</span> column <span class="commentaire">/*ou*/</span> column-reverse;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <button><a class "tryit" href="">Tester flex-direction !</a></button>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="flexwrap">
+        <h3>Flex-wrap</h3>
+        <p class="pcontenu">
+          Duplexque isdem diebus acciderat malum, quod et Theophilum insontem atrox interceperat casus, et Serenianus dignus exsecratione cunctorum, innoxius, modo non reclamante publico vigore, discessit.
+        </p>
+
+        <div class="boitedemo">
+
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.svg"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">flex-wrap: wrap <span class="commentaire">/*ou*/</span> no-wrap <span class="commentaire">/*ou*/</span> wrap-reverse;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <button><a class "tryit" href="">Tester flex-wrap !</a></button>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="flexflow">
+        <h3>Flex-flow</h3>
+        <p class="pcontenu">
+          Duplexque isdem diebus acciderat malum, quod et Theophilum insontem atrox interceperat casus, et Serenianus dignus exsecratione cunctorum, innoxius, modo non reclamante publico vigore, discessit.
+        </p>
+
+        <div class="boitedemo">
+
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.svg"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">flex-direction: valeur de flex-direction <span class="commentaire">/*et*/</span> valeur de flex-wrap;</div>
+                }
+          </div>
+        </div>
+      </section>
+
+      <section class="container boitecontenu" id="justifycontent">
+        <h3>Justify-content</h3>
+        <p class="pcontenu">
+          Duplexque isdem diebus acciderat malum, quod et Theophilum insontem atrox interceperat casus, et Serenianus dignus exsecratione cunctorum, innoxius, modo non reclamante publico vigore, discessit.
+        </p>
+
+        <div class="boitedemo">
+
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.svg"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">justify-content: flex-start <span class="commentaire">/*ou*/</span> flex-end <span class="commentaire">/*ou*/</span> center <span class="commentaire">/*ou*/</span> space-around <span class="commentaire">/*ou*/</span> space-between;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <button><a class "tryit" href="">Tester justify-content !</a></button>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="alignitems">
+        <h3>Align-items</h3>
+        <p class="pcontenu">
+          Duplexque isdem diebus acciderat malum, quod et Theophilum insontem atrox interceperat casus, et Serenianus dignus exsecratione cunctorum, innoxius, modo non reclamante publico vigore, discessit.
+        </p>
+
+        <div class="boitedemo">
+
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.svg"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">align-items: flex-start <span class="commentaire">/*ou*/</span> flex-end <span class="commentaire">/*ou*/</span> center <span class="commentaire">/*ou*/</span> baseline <span class="commentaire">/*ou*/</span> stretch;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <button><a class "tryit" href="">Tester align-items !</a></button>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="align-content">
+        <h3>Align-content</h3>
+        <p class="pcontenu">
+          Duplexque isdem diebus acciderat malum, quod et Theophilum insontem atrox interceperat casus, et Serenianus dignus exsecratione cunctorum, innoxius, modo non reclamante publico vigore, discessit.
+        </p>
+
+        <div class="boitedemo">
+
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.svg"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">align-content: flex-start <span class="commentaire">/*ou*/</span> flex-end <span class="commentaire">/*ou*/</span> center <span class="commentaire">/*ou*/</span> space-around <span class="commentaire">/*ou*/</span> space-between <span class="commentaire">/*ou*/</span> stretch;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <button><a class "tryit" href="">Tester align-content !</a></button>
+        </p>
+      </section>
+
+    </article>
+
+  </body>
+</html>

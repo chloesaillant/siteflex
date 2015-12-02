@@ -1,0 +1,96 @@
+h1 {
+  color: #B5B5B7;
+  font-weight: normal;
+  font-size: 40px;
+  margin-top: 80px;
+  margin-bottom: -12px;
+  margin-left: 8%;
+  transition: 1s;
+}
+
+article {
+  flex-direction: column;
+  background-color: #B5B5B7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0 7%;
+  padding: 3%;
+}
+
+section {
+  flex-direction: column;
+  margin-bottom: 8%;
+}
+
+section h3 {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 1%;
+}
+
+.boitecontenu p {
+  margin-bottom: 1%;
+}
+
+.pcontenu {
+  font-family: 'Roboto', sans-serif;
+  color: #252839;
+  font-size: 0.8em;
+}
+
+.tryit {
+  text-align: center;
+}
+
+.tryit button {
+  background-color: white;
+  color: #B5B5B7;
+  margin: 3px;
+}
+
+.tryit button:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  margin: 1px;
+}
+
+.boitecss {
+  margin: 1% 15%;
+  margin-bottom: 2%;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.boitecss img {
+  height: 60px;
+  margin-top: 3px;
+  margin-right: -3px;
+}
+
+.csscontenu {
+  background-color: #252839;
+  color: white;
+  font-family: monospace;
+  line-height: 2;
+  height: 120px;
+  width: 100%;
+  overflow: auto;
+  padding: 2%;
+}
+
+.indent {
+  margin-left: 25px;
+}
+
+.commentaire {
+  color: #677077;
+}
+
+@media screen and (max-width:600px){
+  h1 {
+    font-size: 30px;
+    margin-bottom: -9px;
+    margin-left: 10%;
+  }
+}
