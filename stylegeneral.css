@@ -74,24 +74,24 @@ header.container ul li {
   list-style-type: none;
 }
 
-.container ul li ul {
+header.container ul li ul {
   display: none;
   position: absolute;
 }
 
-.container ul li ul li {
+header.container ul li ul li {
   padding-top: 10px;
 }
 
-.container ul li ul li a {
+header.container ul li ul li a {
   color: #252839;
 }
 
-.container ul li:hover ul {
+header.container ul li:hover ul {
   display: block;
 }
 
-.container ul li ul li a:hover {
+header.container ul li ul li a:hover {
   color: #FDD016;
 }
 

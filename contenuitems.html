@@ -5,6 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <title>Tout sur flex - Les items</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" media="screen" charset="utf-8">
     <style type="text/css">@import "stylegeneral.css"; @import "stylecontenu.css";</style>
   </head>
@@ -33,6 +34,32 @@
       </p>
     </header>
 
+    <aside class="container" id="navBarre">
+      <div class="container">
+      <h4>Flex sur un container</h4>
+      <ul id="listeNonOrdonee">
+        <li class='elementListe'><a href="contenucontainer.html#display">display</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#flexdirection">flex-direction</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#flexwrap">flex-wrap</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#flexflow">flex-flow</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#justifycontent">justify-content</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#alignitems">align-items</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#aligncontent">align-content</a></li>
+      </ul>
+      <h4>Flex sur un item</h4>
+      <ul id="listeNonOrdonee">
+        <li class='elementListe'><a href="contenuitems.html#order">order</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flexgrow">flex-grow</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flexshrink">flex-shrink</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flexbasis">flex-basis</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flex">flex</a></li>
+        <li class='elementListe'><a href="contenuitems.html#alignself">align-self</a></li>
+      </ul>
+      </div>
+      <button type="button" id="bouton1">>></button>
+      <button type="button" id="bouton2"><<</button>
+    </aside>
+
     <h1>Flex sur un item</h1>
     <article class="container">
 
@@ -54,7 +81,7 @@
           </div>
         </div>
         <p class="tryit">
-          <button><a class "tryit" href="">Tester order !</a></button>
+          <button><a class "tryit" href="tryit/flexOrder.html">Tester order !</a></button>
         </p>
       </section>
 
@@ -76,7 +103,7 @@
           </div>
         </div>
         <p class="tryit">
-          <button><a class "tryit" href="">Tester flex-grow !</a></button>
+          <button><a class "tryit" href="tryit/flexGrow.html">Tester flex-grow !</a></button>
         </p>
       </section>
 
@@ -98,7 +125,7 @@
           </div>
         </div>
         <p class="tryit">
-          <button><a class "tryit" href="">Tester flex-shrink !</a></button>
+          <button><a class "tryit" href="tryit/flexShrink.html">Tester flex-shrink !</a></button>
         </p>
       </section>
 
@@ -120,7 +147,7 @@
           </div>
         </div>
         <p class="tryit">
-          <button><a class "tryit" href="">Tester flex-basis !</a></button>
+          <button><a class "tryit" href="tryit/flexBasis.html">Tester flex-basis !</a></button>
         </p>
       </section>
 
@@ -161,11 +188,26 @@
           </div>
         </div>
         <p class="tryit">
-          <button><a class "tryit" href="">Tester align-self !</a></button>
+          <button><a class "tryit" href="tryit/flexAlignSelf.html">Tester align-self !</a></button>
         </p>
       </section>
 
     </article>
 
+    <script type="text/javascript">
+
+    $("#bouton1").on('click',function(){
+        $("#navBarre").animate({left: '0%'});
+         $("#bouton1").css({'display': 'none'});
+         $("#bouton2").css({'display': 'block'});
+    });
+
+    $("#bouton2").on('click',function(){
+        $("#navBarre").animate({left: '-175px'});
+        $("#bouton2").css({'display': 'none'});
+        $("#bouton1").css({'display': 'block'});
+    });
+
+    </script>
   </body>
 </html>

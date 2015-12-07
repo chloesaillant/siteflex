@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tuto display Flex</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="navBarre.css" >
+  </head>
+  <body>
+  <aside id="navBarre">
+    <ul id="listeNonOrdonee">
+      <li class='elementListe'>Item1</li>
+      <li class='elementListe'>Item2</li>
+      <li class='elementListe'>Item3</li>
+      <li class='elementListe'>Item4</li>
+      <li class='elementListe'>Item5</li>
+      <li class='elementListe'>Item6</li>
+    </ul>
+    <button type="button" id="bouton1">>>></button>
+    <button type="button" id="bouton2"><<<</button>
+  </aside>
+
+
+
+
+<script type="text/javascript">
+
+$("#bouton1").on('click',function(){
+    $("#navBarre").animate({left: '0%'});
+     $("#bouton1").css({'display': 'none'});
+     $("#bouton2").css({'display': 'block'});
+});
+
+$("#bouton2").on('click',function(){
+    $("#navBarre").animate({left: '-10%'});
+    $("#bouton2").css({'display': 'none'});
+    $("#bouton1").css({'display': 'block'});
+});
+
+</script>
+  </body>
+</html>

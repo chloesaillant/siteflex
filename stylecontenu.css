@@ -20,12 +20,15 @@ article {
 section {
   flex-direction: column;
   margin-bottom: 8%;
+  margin-top: -60px;
 }
 
 section h3 {
   color: white;
   font-size: 1.3em;
   margin-bottom: 1%;
+  padding-top: 60px;
+  top: -100px;
 }
 
 .boitecontenu p {
@@ -87,6 +90,80 @@ section h3 {
   color: #677077;
 }
 
+/*Style menu côté*/
+#navBarre{
+  align-items: center;
+  position: fixed;
+  left: -175px;
+}
+#navBarre div {
+  height: 100vh;
+  flex-direction: column;
+  margin-top: -40px;
+  background-color: rgba(37,40,57,0.7);
+  padding: 20px;
+}
+h4 {
+  text-align: right;
+  color: #B5B5B7;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+#bouton1{
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 60px;
+  padding: 15px;
+  background-color: #677077;
+  color: #B5B5B7;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+}
+#bouton2{
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 60px;
+  padding: 15px;
+  background-color: #677077;
+  color: #B5B5B7;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: none;
+}
+#listeNonOrdonee {
+  text-align: right;
+  color: white;
+  margin-bottom: 25px;
+  list-style: none;
+}
+.elementListe {
+  padding-bottom: 2%;
+  margin: 5%;
+}
+.elementListe:hover:after {
+  content: "<";
+}
+.elementListe a {
+  font-family: 'Roboto',sans-serif;
+  font-weight: normal;
+  font-size: 0.9em;
+  transition: 0.5s;
+}
+.elementListe a:hover {
+  font-weight: bold;
+  margin-right: 4%;
+}
+
+/*Style petit écran*/
 @media screen and (max-width:600px){
   h1 {
     font-size: 30px;

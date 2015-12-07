@@ -1,0 +1,22 @@
+#navBarre{
+  display:flex;
+  align-items: center;
+  position:relative;
+  left: -10%;
+}
+#bouton1{
+  display: block;
+}
+#bouton2{
+  display: none;
+}
+#listeNonOrdonee{
+  padding: 3% 3% 3%;
+  background-color: rgba(162,152,152, 0.3);
+  font-style: Arial,sans-serif;
+  list-style: none;
+}
+.elementListe{
+  padding: 3% 3% 3%;
+  margin-left: 2%;
+}
