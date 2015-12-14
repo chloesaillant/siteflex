@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flex wrap</title>
+    <link rel="stylesheet" href="iframe.css" media="screen">
+  </head>
+  <body>
+    <header>
+      <h2>Try it yourself!</h2>
+    </header>
+
+    <div id="container">
+    <div id="conteneurCodeBrut">
+      <form>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// CODE BRUT /////////////////////-->
+        <textarea id="codeBrut" name="name" rows="32" cols="60" autocomplete="off" spellcheck="false" wrap="logical">
+
+          <!DOCTYPE html>
+        <html>
+        <head>
+        <style media="screen">
+
+
+        .red, .green, .blue{
+          background-color: #FE3500;
+          width: 500px;
+          height:50px;
+        }
+        .green{
+          background-color: #FDD016;
+        }
+        .blue{
+          background-color: #E69127;
+        }
+
+        .flexWrap{
+        display: flex;
+        width: 400px;
+        height: 200px;
+        }
+
+        .nowrap{
+          flex-wrap: nowrap;
+        }
+        .wrap{
+          flex-wrap: wrap;
+        }
+        .wrapreverse{
+          flex-wrap: wrap-reverse;
+        }
+
+        </style>
+
+        </head>
+        <body>
+
+          <div class="flexWrap nowrap">
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+          </div>
+          <div class="flexWrap wrap">
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+          </div>
+          <div class="flexWrap wrapreverse">
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+          </div>
+
+        </body>
+        </html>
+
+
+
+
+        </textarea>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// FIN DU CODE BRUT ////////////-->
+
+
+      </form>
+      </div>
+      <button type="button" id="bouton" onclick="changeContenuIframe()"> Modifier >> </button>
+
+    <div id="resultat">
+
+    </div>
+    </div>
+    </div>
+    <script>
+      function changeContenuIframe(){
+          document.getElementById('resultat').innerHTML = "";
+          var codeBrut = document.getElementById('codeBrut').value;
+          var iframe = document.createElement('iframe');
+          resultat.appendChild(iframe);
+          iframe.classList.add("iframeSize");
+          iframe.contentWindow.document.open();
+          iframe.contentWindow.document.write(codeBrut);
+          iframe.contentWindow.document.close();
+      }
+      changeContenuIframe();
+
+
+    </script>
+  </body>
+</html>
